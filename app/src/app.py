@@ -7,6 +7,7 @@ sys.path.append('./')
 from logutil import LogUtil
 from importenv import ImportEnvKeyEnum
 import importenv as setting
+from data import User
 
 PYTHON_APP_HOME = os.getenv('PYTHON_APP_HOME')
 logger = getLogger(__name__)
@@ -19,7 +20,7 @@ logger.addHandler(handler)
 logger.propagate = False
 
 if __name__ == '__main__':
-  print('Hello Python on Docker!!')
-  logger.info('This is logger message!!')
-  # .envの取得
-  # setting.ENV_DIC[ImportEnvKeyEnum.importenvに書いた値.value]
+  data = User(name = 'hoge', age = 20)
+  logger.info(data)
+  logger.info('name : %s' % data.name)
+  logger.info('age : %d' % data.age)

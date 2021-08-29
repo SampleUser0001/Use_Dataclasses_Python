@@ -1,17 +1,14 @@
-# Template Python on Docker
+# Use Dataclasses 
 
-## 使い方
+PythonのData Classeseを使ってみる。
 
-1. Dockerfileのimageを変更する。
-2. 必要に応じてDockerfileにpipを書く。
-3. 必要に応じてdocker-compose.ymlを修正する。
-4. 下記実行。
-    ``` sh
-    docker-compose build
-    docker-compose up
-    ```
+## 実行
+
+``` sh
+docker-compose up --build
+```
 
 ## 参考
 
-- [Qiita:Docker を使う（python のイメージで色々確認してみる）](https://qiita.com/landwarrior/items/fd918da9ebae20486b81)
-- [Future Tech Blog:仕事でPythonコンテナをデプロイする人向けのDockerfile (1): オールマイティ編](https://future-architect.github.io/articles/20200513/)
+- [https://docs.python.org/ja/3/library/dataclasses.html:Python](https://docs.python.org/ja/3/library/dataclasses.html)
+- [Python3.7からは「Data Classes」がクラス定義のスタンダードになるかもしれない:Qiita](https://qiita.com/tag1216/items/13b032348c893667862a)
