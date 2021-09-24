@@ -24,3 +24,9 @@ if __name__ == '__main__':
   logger.info(data)
   logger.info('name : %s' % data.name)
   logger.info('age : %d' % data.age)
+
+  data2 = User(name = 'hoge', age = 20)
+  logger.info(data == data2)
+  
+  data3 = User(name = 'piyo', age = 20)
+  logger.info(data == data3)
